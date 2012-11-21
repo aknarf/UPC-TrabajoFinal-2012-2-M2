@@ -4,10 +4,9 @@ UPC-TrabajoFinal-2012-2-M2
 Trabajo final de POO
 
 Miembros:
-FRANK AGÚERO ZARATE                                                                                       
+FRANK AGÜERO ZARATE                                                                                       
 WILDE SIFUENTES MARQUEZ                                                                                      
 JORGE KAWAZO KIAN                                                                                         
-MIGUEL BRAVO
 
 Link Scrumy:
 http://scrumy.com/gladness62limned#
