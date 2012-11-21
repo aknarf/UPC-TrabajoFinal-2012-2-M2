@@ -7,19 +7,36 @@ public class Locales {
     
     String nombre;
     String direccion;
-    String sede;
     String salas;
     String codigo;
+    int tiempodealquiler;
     // atributos de locales
 
-    
-    
-    
-    public Locales(String nombre, String direccion, String codigo) {
+    public Locales(String nombre, String direccion, String salas, String codigo) {
         this.nombre = nombre;
         this.direccion = direccion;
+         this.codigo = codigo;
+    }
+
+    Locales(String codigo, String nombre, String direccion) {
         this.codigo = codigo;
-    }//Nobre, codigo y dirección obligatorios
+        this.nombre = nombre;
+        this.direccion = direccion;
+    }
+
+     //Nobre, codigo y dirección obligatorios
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
 
     
     
@@ -40,7 +57,9 @@ public class Locales {
     
 //comienzan los metodos ---------------------------------------------------
 
-    
+    public int alquiler(){
+        return tiempodealquiler;
+    }
     
     }
 
