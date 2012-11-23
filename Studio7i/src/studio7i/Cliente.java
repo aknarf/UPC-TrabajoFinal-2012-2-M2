@@ -9,7 +9,11 @@ package studio7i;
  * @author Frank
  */
 public class Cliente {
-    String Nombre;
-    String Apellido;
+    public String Nombre;
+    public String Apellido;
+    public String email;
+    public String direccion;
+    private String password;
+    
     
 }

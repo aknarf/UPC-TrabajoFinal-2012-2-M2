@@ -27,6 +27,7 @@ public class Administrador {
         throws BusinessException { 
         validarDatosIncompletos(codigo,nombre,descripcion);
         validarDuplicidad(codigo);
+        validarDuplicidadNombre(nombre);
         
         getTipos().add(new Locales(codigo,nombre,descripcion));
     }
@@ -65,7 +66,7 @@ public class Administrador {
         return null;
     }
         
-    private void validarExistenciaTipoHabitacion(String codigo)
+    private void validarExistenciaLocales(String codigo)
             throws BusinessException {
         if (buscar(codigo) == null){
             String msg = "Local "+ codigo+ " no existe.";
@@ -76,7 +77,7 @@ public class Administrador {
    
      
     public void eliminar(String codigo) throws BusinessException {
-        validarExistenciaTipoHabitacion(codigo);
+        validarExistenciaLocales(codigo);
         getTipos().remove(buscar(codigo));
     }
     
@@ -85,8 +86,30 @@ public class Administrador {
         return tipos;
     }
 
-
+    
+    private void validarDuplicidadNombre(String nombre)
+            throws BusinessException {
+        if (buscarNombre(nombre) != null){
+            String msg = "Nombre "+nombre+ " ya existe.";
+            throw  new BusinessException(msg);
+    
+       }
     }
+
+    public Locales buscarNombre(String nombre) {
+        // Buscar el tipo de habitacion por codigo
+    for(Locales tipo : getTipos())
+    if (tipo.getNombre().equals(nombre))
+               return tipo;
+        return null;
+}
+    
+
+        }
+      
+
+
+    
 
 
     
