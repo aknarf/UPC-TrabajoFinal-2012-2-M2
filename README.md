@@ -14,3 +14,6 @@ http://scrumy.com/gladness62limned#
 Bítacora (GoogleDocs):                                                                             
 https://docs.google.com/spreadsheet/ccc?key=0AiH9P4VbcH6rdFZmWXYwM2g5Y1czR0ZrZHNUbXZuVEE
 
+Documentación Parcial (GoogleDocs):
+https://docs.google.com/open?id=0BxVG9bKaWG5OU0tOZ1lldDJtNDg
+
